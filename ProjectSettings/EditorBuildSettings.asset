@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: e52a8acebab825c4693f6bfd1c875b7a
+  - enabled: 1
+    path: Assets/Scenes/video.unity
+    guid: 2dc5b842170e7124b85d31622ec1c7cb
+  - enabled: 1
+    path: Assets/Scenes/main.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/music.unity
+    guid: 961d194434bb02d47acea23ec77e0de6
+  - enabled: 1
+    path: Assets/Scenes/slingShot.unity
+    guid: 9bd71e6631ca4e545b9b4f35e5267b12
+  m_configObjects: {}
