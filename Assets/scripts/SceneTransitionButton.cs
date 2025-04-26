@@ -7,6 +7,7 @@ public class SceneTransitionButton : MonoBehaviour
 {
     [Header("UI 组件")]
     public Button enterButton;
+    public Button enterButton2;
     public Image fadeImage;
 
     [Header("设置")]
@@ -20,7 +21,8 @@ public class SceneTransitionButton : MonoBehaviour
         // 1. 绑定按钮
         if (enterButton != null)
             enterButton.onClick.AddListener(OnEnterButtonClick);
-
+        if (enterButton2 != null)
+            enterButton2.onClick.AddListener(OnEnterButtonClick);
         // 2. 初始黑幕全透明
         if (fadeImage != null)
         {

@@ -4,6 +4,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    public string levelKey = "Level1suc"; 
+
     public static GameManager instance;
 
     [Header("音源 & 播放控制")]
@@ -70,7 +72,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("CheckForEnd: spawningFinished == true");
 
         // 等所有带 Note 标签的物体消失
-        while (GameObject.FindGameObjectsWithTag("Note").Length > 0)
+        while (GameObject.FindGameObjectsWithTag("Note").Length > 4)
         {
             Debug.Log($"CheckForEnd: notes remaining = {GameObject.FindGameObjectsWithTag("Note").Length}");
             yield return new WaitForSeconds(0.5f);
@@ -84,6 +86,10 @@ public class GameManager : MonoBehaviour
 
     private void ShowResults()
     {
+        PlayerPrefs.SetInt(levelKey + "_Completed", 1);
+        PlayerPrefs.Save();  // 强制写入磁盘，保证跨场景持久化
+                             // …下面是原有的结果显示逻辑…
+        resultsScreen.SetActive(true);
         Debug.Log("ShowResults: displaying result screen");
         resultsScreen.SetActive(true);
 
@@ -96,14 +102,14 @@ public class GameManager : MonoBehaviour
         float percent = totalNotes > 0 ? (hitCount / totalNotes) * 100f : 0f;
         percentHitText.text = percent.ToString("F1") + "%";
 
-        string rank = "F";
-        if (percent > 40) rank = "D";
-        if (percent > 55) rank = "C";
-        if (percent > 70) rank = "B";
-        if (percent > 85) rank = "A";
-        if (percent > 95) rank = "S";
-        if (percent == 100) rank = "SS";
-        if (percent == 100 && hitCount == totalNotes) rank = "SSS";
+        string rank = "完美无瑕";
+        if (percent > 40) rank = "频频疏漏";
+        if (percent > 55) rank = "平平之章";
+        if (percent > 70) rank = "略有小成";
+        if (percent > 85) rank = "丝竹和鸣";
+        if (percent > 95) rank = "出神入化";
+        if (percent == 100) rank = "天籁之音";
+        if (percent == 100 && hitCount == totalNotes) rank = "天籁之音";
         rankText.text = rank;
         finalScoreText.text = currentScore.ToString();
     }
