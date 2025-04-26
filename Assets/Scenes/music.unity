@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1073379122}
-  fadeDuration: 1.5
+  fadeDuration: 3
 --- !u!95 &262527249
 Animator:
   serializedVersion: 5

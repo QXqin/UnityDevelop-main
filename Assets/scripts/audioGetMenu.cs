@@ -52,5 +52,10 @@ public class audioGetMenu : MonoBehaviour
             GameObject gameAudio = GameObject.Find("audioCtrl").transform.gameObject;//得到音量物体
             gameAudio.GetComponent<AudioSource>().volume =  PlayerPrefs.GetFloat("volumnValue");
         }
+        if (activeScene.name == "music")
+        {
+            GameObject gameAudio = GameObject.Find("GameManager").transform.gameObject;//得到音量物体
+            gameAudio.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("volumnValue");
+        }
     }
   }
