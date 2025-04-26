@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -72,10 +73,10 @@ public class GameManager : MonoBehaviour
         // 等所有带 Note 标签的物体消失
         while (GameObject.FindGameObjectsWithTag("Note").Length > 0)
         {
-            Debug.Log($"CheckForEnd: notes remaining = {GameObject.FindGameObjectsWithTag("Note").Length}");
+            //Debug.Log($"CheckForEnd: notes remaining = {GameObject.FindGameObjectsWithTag("Note").Length}");
             yield return new WaitForSeconds(0.5f);
         }
-        Debug.Log("CheckForEnd: all notes cleared");
+        //Debug.Log("CheckForEnd: all notes cleared");
 
         // 停音乐并显示结果
         if (theMusic.isPlaying) theMusic.Stop();
@@ -84,6 +85,14 @@ public class GameManager : MonoBehaviour
 
     private void ShowResults()
     {
+<<<<<<< Updated upstream
+=======
+      
+        GameStatus.MarkCompleted(3);
+        SceneManager.LoadScene("main");
+
+        resultsScreen.SetActive(true);
+>>>>>>> Stashed changes
         Debug.Log("ShowResults: displaying result screen");
         resultsScreen.SetActive(true);
 

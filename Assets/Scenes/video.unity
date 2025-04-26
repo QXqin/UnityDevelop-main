@@ -158,8 +158,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -291, y: 160}
   m_SizeDelta: {x: 80, y: 33.2824}
+=======
+  m_AnchoredPosition: {x: -732, y: 433}
+  m_SizeDelta: {x: 305.9244, y: 111.85}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7211721
 MonoBehaviour:
@@ -722,11 +727,16 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
     m_FontSize: 14
     m_FontStyle: 0
+=======
+    m_FontSize: 63
+    m_FontStyle: 1
+>>>>>>> Stashed changes
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 63
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -775,10 +785,17 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 324439504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0016364, y: 0.8409}
   m_SizeDelta: {x: 711.67, y: 640.8182}
+=======
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1309614895
 VideoPlayer:

@@ -333,8 +333,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -284.7, y: 167.19997}
-  m_SizeDelta: {x: 98.3, y: 34.7}
+  m_AnchoredPosition: {x: -818.4679, y: 452.39716}
+  m_SizeDelta: {x: 209.3642, y: 73.9058}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45094574
 MonoBehaviour:
@@ -547,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 120345723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.83, y: 1.72, z: 0.045404326}
+  m_LocalPosition: {x: 2.13, y: 2.05, z: 0.045404326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -707,7 +707,7 @@ Transform:
   m_GameObject: {fileID: 225569506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47, y: 1.72, z: 0.045404326}
+  m_LocalPosition: {x: 0, y: 2.05, z: 0.045404326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1138,7 +1138,7 @@ Transform:
   m_GameObject: {fileID: 302016828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88, y: 1.72, z: 0.045404326}
+  m_LocalPosition: {x: -3.32, y: 2.05, z: 0.045404326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2181,7 +2181,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< Updated upstream
   m_audioClip: {fileID: 8300000, guid: 94516ffe95fc0ea498150620e3eb3dff, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: 875247c8167bab548a73185d623e7dab, type: 3}
+>>>>>>> Stashed changes
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3102,10 +3106,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 19
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3113,7 +3117,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EXIT
+  m_Text: "\u8FD4\u56DE"
 --- !u!222 &1381206582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3267,7 +3271,7 @@ SpriteRenderer:
   m_Size: {x: 1.09, y: 1.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1408518265
@@ -3310,7 +3314,7 @@ Transform:
   m_GameObject: {fileID: 1588565831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.35, y: 1.72, z: 0.045404326}
+  m_LocalPosition: {x: -1.91, y: 2.05, z: 0.045404326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

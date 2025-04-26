@@ -8,6 +8,10 @@ TagManager:
   - options
   - Activator
   - Note
+  - PullPointArea
+  - PullArea
+  - Stone
+  - Apple
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - bk
   - 
   - 
   - 
